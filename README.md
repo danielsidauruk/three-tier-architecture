@@ -25,3 +25,8 @@ terragrunt run-all plan
 ```
 terragrunt run-all apply
 ```
+**Destroy the Infrastructure:**
+
+```
+terragrunt run-all destroy
+```
