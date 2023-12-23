@@ -17,4 +17,8 @@ resource "google_compute_subnetwork" "this" {
   region                   = each.value.region
   ip_cidr_range            = each.value.ip_cidr_range
   private_ip_google_access = "true"
+
+  lifecycle{
+      create_before_destroy = true
+  }
 }

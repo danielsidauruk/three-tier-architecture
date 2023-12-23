@@ -18,13 +18,13 @@ variable "services" {
 variable "region" {
   type        = string
   description = "Default Region"
-  default     = "us-central1"
+  default     = "asia-southeast1"
 }
 
 variable "zone" {
   type        = string
   description = "Default Zone"
-  default     = "us-central1-a"
+  default     = "asia-southeast1-a"
 }
 
 variable "network" {
@@ -41,15 +41,15 @@ variable "subnets" {
   }))
   description = "List of the subnets"
   default = [
-    {
-      name          = "iowa"
-      region        = "us-central1"
-      ip_cidr_range = "192.168.1.0/24"
-    },
+    # {
+    #   name          = "iowa"
+    #   region        = "us-central1"
+    #   ip_cidr_range = "192.168.1.0/24"
+    # },
     {
       name          = "singapore"
       region        = "asia-southeast1"
-      ip_cidr_range = "192.168.2.0/24"
+      ip_cidr_range = "192.168.1.0/24"
     },
   ]
 }

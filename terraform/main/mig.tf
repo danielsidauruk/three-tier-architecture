@@ -8,7 +8,7 @@ resource "google_compute_instance_template" "this" {
   }
 
   network_interface {
-    subnetwork = data.terraform_remote_state.foundation.outputs.subnetwork_self_links["iowa"]
+    subnetwork = data.terraform_remote_state.foundation.outputs.subnetwork_self_links["singapore"]
     access_config {
       // Ephemeral public IP
     }

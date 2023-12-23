@@ -1,13 +1,13 @@
 variable "region" {
   type        = string
   description = "Default Region"
-  default     = "us-central1"
+  default     = "asia-southeast1"
 }
 
 variable "zone" {
   type        = string
   description = "Default Zone"
-  default     = "us-central1-c"
+  default     = "asia-southeast1-a"
 }
 
 
@@ -16,11 +16,11 @@ variable "db_settings" {
   type        = map(any)
   default = {
     user_name        = "user"
-    instance_name    = "three-tier-instance"
-    db_name          = "sample-database"
+    instance_name    = "mysql-three-tier-instance"
+    db_name          = "mysql-database"
     database_tier    = "db-f1-micro"
     default_user     = "default"
     db_user          = "user"
-    database_version = "MYSQL_8_0"
+    database_version = "MYSQL_5_7"
   }
 }

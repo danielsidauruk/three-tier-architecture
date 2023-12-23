@@ -6,13 +6,13 @@ variable "project_id" {
 variable "region" {
   type        = string
   description = "Default Region"
-  default     = "us-central1"
+  default     = "asia-southeast1"
 }
 
 variable "zone" {
   type        = string
   description = "Default Zone"
-  default     = "us-central1-a"
+  default     = "asia-southeast1-a"
 }
 
 variable "load_balancer" {
